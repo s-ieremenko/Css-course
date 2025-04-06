@@ -1,5 +1,7 @@
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -23,18 +25,31 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
     display: block;
     max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
     font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     overflow-wrap: break-word;
 }
 
@@ -43,17 +58,22 @@ p {
     text-wrap: pretty;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-wrap: balance;
 }
 
 /*
   10. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
     isolation: isolate;
 }
-
 
 * {
     box-sizing: border-box;
@@ -77,7 +97,8 @@ body {
     padding-top: 96px;
 }
 
-header, .card {
+header,
+.card {
     background-color: white;
 }
 
@@ -86,45 +107,46 @@ main {
 }
 
 strong {
-    color: hsla(160, 100%, 30%, 1)
+    color: hsla(160, 100%, 30%, 1);
 }
 
 p {
     font-weight: 400;
     font-size: 1.25rem;
-    line-height: 150%;
-    letter-spacing: 0;
+    line-height: 1.5;
+}
 
+h1 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
 }
 
 .intro-chunk {
     max-width: 415px;
 }
 
-.card, header {
+.card,
+header {
     border-bottom: 8px solid hsla(0, 0%, 60%, 1);
 }
 
 .card {
-    padding: 8px 24px 24px 24px;
+    padding: 24px;
 }
 
 .intro-chunk {
     margin-left: 24px;
 }
 
-.title {
-    margin-bottom: 48px;
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
-.intro-chunk > p:first-of-type, .card > p:first-of-type {
-    margin-bottom: 16px;
+.intro-chunk > p:first-of-type,
+.card > p:first-of-type {
+    margin-bottom: 1rem;
 }
 
 .card > p:first-of-type {
-    margin-top: 24px;
+    margin-top: 1.5rem;
 }
 
 .indented-heading {
@@ -133,5 +155,5 @@ p {
     max-width: max-content;
     border-bottom: 8px solid hsla(45, 100%, 40%, 1);
     margin-left: -32px;
+    margin-top: -32px;
 }
-

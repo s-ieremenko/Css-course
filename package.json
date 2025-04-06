@@ -1,0 +1,14 @@
+{
+  "name": "Css-course",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:s-ieremenko/Css-course.git",
+  "author": "Svitlana Ieremenko",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}
